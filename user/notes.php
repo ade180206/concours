@@ -155,8 +155,6 @@ if ($moy_generale >= 10) {
         </div>
     </div>
 </div>
-
-
 </body>
 </html>
 <?php $conn->close(); ?>

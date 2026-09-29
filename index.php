@@ -73,10 +73,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </div>
 
-    <div class="footer">
-    </div>
 </div> 
-
-
 </body>
 </html>

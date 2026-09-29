@@ -153,8 +153,6 @@ $liste = $conn->query("SELECT * FROM candidats ORDER BY nom ASC");
     </div>
 
 </div>
-
-
 </body>
 </html>
 <?php $conn->close(); ?>

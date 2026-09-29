@@ -192,10 +192,7 @@ $recapitulatif = $conn->query("
         </div>
     </div>
     <?php endif; ?>
-
 </div>
-
-
 </body>
 </html>
 <?php $conn->close(); ?>
