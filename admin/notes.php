@@ -71,13 +71,13 @@ $recapitulatif = $conn->query("
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saisie des Notes – Concours PIGIER CI</title>
+    <title>Saisie des Notes – Concours  CI</title>
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
 <div class="header">
-    <div class="logo">🎓 <span>PIGIER CI</span> — Administration</div>
+    <div class="logo">🎓 Administration</div>
     <nav>
         <a href="accueil.php">🏠 Accueil</a>
         <a href="candidats.php">👤 Candidats</a>
@@ -195,7 +195,6 @@ $recapitulatif = $conn->query("
 
 </div>
 
-<div class="footer">Année académique 2025-2026 &bull; DEV WEB Dynamique &bull; RGL2E</div>
 
 </body>
 </html>

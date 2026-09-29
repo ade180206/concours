@@ -7,7 +7,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');       // Utilisateur XAMPP par défaut
 define('DB_PASS', '');           // Mot de passe vide par défaut sur XAMPP
-define('DB_NAME', 'concours');
+define('DB_NAME', 'concour');
 
 function getConnexion() {
     $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
@@ -19,8 +19,8 @@ function getConnexion() {
             <p>" . $conn->connect_error . "</p>
             <p><strong>Vérifiez que :</strong><br>
             ✔ XAMPP est lancé (Apache + MySQL)<br>
-            ✔ La base <em>concours</em> est créée via phpMyAdmin<br>
-            ✔ Le fichier <em>concours.sql</em> a été importé</p>
+            ✔ La base <em>concour</em> est créée via phpMyAdmin<br>
+            ✔ Le fichier <em>concour.sql</em> a été importé</p>
         </div>");
     }
 

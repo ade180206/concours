@@ -68,13 +68,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Résultat – Concours PIGIER CI</title>
+    <title>Mon Résultat – Concours  CI</title>
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
 <div class="header">
-    <div class="logo">🎓 <span>PIGIER CI</span> — Espace Candidat</div>
+    <div class="logo">🎓 Administration</div>
     <nav>
         <a href="../logout.php">🚪 Déconnexion</a>
     </nav>
@@ -148,7 +148,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </div>
 
-<div class="footer">Année académique 2025-2026 &bull; DEV WEB Dynamique &bull; RGL2E</div>
 
 </body>
 </html>

@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($username === '' || $password === '') {
         $erreur = 'Veuillez remplir tous les champs.';
-    } elseif ($username === 'admin' && $password === 'admin') {
+    } elseif($username === 'admin' && $password === 'admin') {
         // Connexion admin
         $_SESSION['role']     = 'admin';
         $_SESSION['username'] = 'admin';
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion – Concours PIGIER CI</title>
+    <title>Connexion au Concours  CI</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="container-sm">
     <div class="card">
         <div class="login-header">
-            <div class="school">🎓 PIGIER CI – Abidjan Plateau</div>
+            <div class="school">🎓  CI – Abidjan </div>
             <h1>Espace Concours</h1>
             <p>Connectez-vous pour accéder à votre espace</p>
         </div>
@@ -80,7 +80,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <div class="footer">
-        Année académique 2025-2026 &bull; DEV WEB Dynamique &bull; RGL2E &bull; Prof. M. WADJA
     </div>
 </div> 
 

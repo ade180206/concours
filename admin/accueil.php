@@ -13,13 +13,13 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil Admin – Concours PIGIER CI</title>
+    <title>Accueil Admin – Concours  CI</title>
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
 <div class="header">
-    <div class="logo">🎓 <span>PIGIER CI</span> — Administration</div>
+    <div class="logo">🎓  Administration</div>
     <nav>
         <a href="candidats.php">👤 Candidats</a>
         <a href="notes.php">📝 Saisie de notes</a>
@@ -49,7 +49,6 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     </div>
 </div>
 
-<div class="footer">Année académique 2025-2026 &bull; DEV WEB Dynamique &bull; RGL2E</div>
 
 
 </body>
