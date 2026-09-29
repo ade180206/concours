@@ -28,7 +28,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['username'] = 'admin';
         header('Location: admin/accueil.php');
         exit;
-    } 
+    } else if($username === 'user' && $password === 'user') {
+        // Connexion utilisateur
+        $_SESSION['role']     = 'user';
+        $_SESSION['username'] = $username;
+        header('Location: user/accueil.php');
+        exit;
+    } else {
+        $erreur = 'Identifiants incorrects.';
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -44,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="container-sm">
     <div class="card">
         <div class="login-header">
-            <div class="school">🎓  CI – Abidjan </div>
+            <div class="school">🎓 CONCOURS  CI  </div>
             <h1>Espace Concours</h1>
             <p>Connectez-vous pour accéder à votre espace</p>
         </div>
