@@ -28,13 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['username'] = 'admin';
         header('Location: admin/accueil.php');
         exit;
-    } else {
-        // Connexion utilisateur
-        $_SESSION['role']     = 'user';
-        $_SESSION['username'] = $username;
-        header('Location: user/accueil.php');
-        exit;
-    }
+    } 
 }
 ?>
 <!DOCTYPE html>
