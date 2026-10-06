@@ -38,9 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $conn->prepare("INSERT INTO candidats (matricule, nom, prenoms, date_naissance, filiere) VALUES (?, ?, ?, ?, ?)");
             $stmt->bind_param('sssss', $matricule, $nom, $prenoms, $date_naissance, $filiere);
             if ($stmt->execute()) {
-                $message  = "Candidat <strong>$nom $prenoms</strong> enregistré avec succès !";
+                $message  = "Candidat <strong>$nom $prenoms</strong> enregistré avec  succès !";
                 $type_msg = 'success';
-            } else {
+            } else { 
                 $message  = 'Erreur lors de l\'enregistrement : ' . $conn->error;
                 $type_msg = 'error';
             }
@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // ─── Liste des candidats ───
-$liste = $conn->query("SELECT * FROM candidats ORDER BY nom ASC");
+$liste = $conn->query("SELECT * FROM candidats ORDER BY matricule ASC");
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -148,6 +148,7 @@ $liste = $conn->query("SELECT * FROM candidats ORDER BY nom ASC");
                     <?php endwhile; ?>
                     </tbody>
                 </table>
+            
             </div>
         <?php endif; ?>
     </div>

@@ -23,9 +23,9 @@
 
 body {
     font-family: 'Sora', sans-serif;
-    background: var(--bg);
     color: #1e293b;
     min-height: 100vh;
+    max-width: 900px;
 }
 
 /* ── HEADER ── */

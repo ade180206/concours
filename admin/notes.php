@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // ─── Liste des candidats pour le select ───
-$candidats = $conn->query("SELECT matricule, nom, prenoms FROM candidats ORDER BY nom ASC");
+$candidats = $conn->query("SELECT matricule, nom, prenoms FROM candidats ORDER BY matricule ASC");
 
 // ─── Récapitulatif des notes saisies ───
 $recapitulatif = $conn->query("
